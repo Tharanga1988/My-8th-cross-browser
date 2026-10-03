@@ -328,6 +328,141 @@ ul {
   }
 }
 
+.contact-section {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.contact-section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 70px;
+}
+@media (max-width: 900px) {
+  .contact-section-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.contact-section-info h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  margin-bottom: 25px;
+}
+@media (max-width: 600px) {
+  .contact-section-info h1 {
+    font-size: 27px;
+  }
+}
+.contact-section-info p {
+  color: #777777;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.contact-section-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+.contact-section-form .form-group input,
+.contact-section-form .form-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 0;
+  font-family: inherit;
+  font-size: 14px;
+  color: #111111;
+  outline: none;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+.contact-section-form .form-group input::-webkit-input-placeholder, .contact-section-form .form-group textarea::-webkit-input-placeholder {
+  color: #777777;
+}
+.contact-section-form .form-group input::-moz-placeholder, .contact-section-form .form-group textarea::-moz-placeholder {
+  color: #777777;
+}
+.contact-section-form .form-group input:-ms-input-placeholder, .contact-section-form .form-group textarea:-ms-input-placeholder {
+  color: #777777;
+}
+.contact-section-form .form-group input::-ms-input-placeholder, .contact-section-form .form-group textarea::-ms-input-placeholder {
+  color: #777777;
+}
+.contact-section-form .form-group input::placeholder,
+.contact-section-form .form-group textarea::placeholder {
+  color: #777777;
+}
+.contact-section-form .form-group input:focus,
+.contact-section-form .form-group textarea:focus {
+  border-color: #111111;
+}
+.contact-section-form .form-group textarea {
+  resize: vertical;
+}
+.contact-section-form .submit-btn {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 12px 36px;
+  background-color: #5143eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.2s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.contact-section-form .submit-btn:hover {
+  background-color: rgb(46.8692307692, 30.1230769231, 231.0769230769);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.map-container {
+  position: relative;
+  display: inline-block;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.map-pin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+}
+.map-pin .google-pin {
+  display: block;
+  -webkit-filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
 .project-details {
   margin-top: 40px;
   margin-bottom: 80px;
@@ -335,6 +470,9 @@ ul {
 .project-details-header {
   display: grid;
   grid-template-columns: 1.8fr 1.2fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 60px;
   margin-bottom: 60px;
 }
@@ -514,6 +652,11 @@ ul {
   display: flex;
   gap: 18px;
   font-size: 0.95rem;
+}
+@media (max-width: 600px) {
+  .footer-right .social-links .fa-brands {
+    font-size: 18px;
+  }
 }
 
 @-webkit-keyframes fadeInUp {

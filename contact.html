@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis - Contact</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="nav-bar">
+        <nav class="container nav-bar-container">
+            <a href="index.html" class="brand-logo">Genesis</a>
+            <ul class="nav-links">
+                <li><a href="details.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container contact-section">
+
+        <div class="contact-section-wrapper">
+
+            <div class="contact-section-info">
+                <h1 class="main-title">Full set of great features to make your product fresh</h1>
+                <p class="subtitle">
+                    Our favorite brands are our friends! We help them to achieve their goals, they help us to stay
+                    sharp.
+                </p>
+            </div>
+
+            <div class="contact-section-form">
+                <form action="#" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="map-container">
+            <img src="images/img-map.png" alt="Map Location" class="map-image">
+            <div class="map-pin">
+                <svg class="google-pin" viewBox="0 0 24 24" width="38" height="38">
+                    <path fill="#EA4335" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                    <circle cx="12" cy="9" r="2.5" fill="#B31412" />
+                </svg>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer container" id="contact">
+        <nav class="footer-wrapper">
+            <a href="index.html" class="brand-logo">Genesis</a>
+
+            <div class="footer-right">
+                <ul class="nav-links">
+                    <li><a href="details.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
